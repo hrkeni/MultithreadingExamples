@@ -1,15 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using MultithreadingExamples.Async;
+using MultithreadingExamples.Util;
 using System.Threading.Tasks;
 
 namespace MultithreadingExamples
 {
     class Program
     {
-        static void Main(string[] args)
+        async static Task Main(string[] args)
         {
+            //await new AsyncExample().DoSomethingAsync();
+
+            //await new ThreadpoolExample().DoSomethingAsync();
+
+            //await new ExceptionExample().TrySomethingAsync();
+
+            new DedicatedThreadSynchronisationContext().Send(_ => new DeadlockExample().Deadlock(), null);
+
         }
     }
 }
