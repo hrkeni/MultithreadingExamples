@@ -8,7 +8,7 @@ namespace MultithreadingExamples
     {
         async static Task Main(string[] args)
         {
-            await new AsyncExample().DoSomethingAsync();
+            //await new AsyncExample().DoSomethingAsync();
 
             //await new ThreadpoolExample().DoSomethingAsync();
 
@@ -19,6 +19,8 @@ namespace MultithreadingExamples
             //await new WhenAllExample().DoSomething();
 
             //new SchedulingExample().DoSomething();
+
+            new BackgroundJobExample().QueueWorkItem();
 
         }
     }
