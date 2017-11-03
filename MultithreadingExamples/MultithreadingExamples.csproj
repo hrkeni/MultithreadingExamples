@@ -47,8 +47,10 @@
   <ItemGroup>
     <Compile Include="Async\DeadlockExample.cs" />
     <Compile Include="Async\ExceptionExample.cs" />
+    <Compile Include="Async\SchedulingExample.cs" />
     <Compile Include="Async\ThreadpoolExample.cs" />
     <Compile Include="Async\AsyncExample.cs" />
+    <Compile Include="Async\WhenAllExample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\DedicatedThreadSynchronizationContext.cs" />
